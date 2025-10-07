@@ -1,7 +1,7 @@
 import React from "react";
 import "./MissionVision.css";
 
-export default function MissionVision() {
+function MissionVision() {
     return (
         <section className="mv-section">
             <div className="mv-container">
@@ -108,7 +108,7 @@ export default function MissionVision() {
                     </article>
                 </div>
 
-                {                        }
+                {                       }
                 <div className="mv-grid">
                     <article className="mv-card" style={{gridColumn: "1 / -1"}}>
                         <div className="mv-card-head">
@@ -126,5 +126,7 @@ export default function MissionVision() {
         </section>
     );
 }
+
+export default MissionVision;
 
 
