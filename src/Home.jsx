@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
+import logo from "./assets/logo-pnc.png";
 import heroImage from "./assets/uc-hero.jpg";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
@@ -18,6 +19,15 @@ function Home() {
         <div className="hero-overlay"></div>
 
         <div className="hero-content text-white position-relative container px-3">
+          <div>
+            <img
+              src={logo}
+              alt="Logo"
+              width="155"
+              height="140"
+              className="d-inline-block align-text-top me-2"
+            />
+          </div>
           <h2 className="fw-semibold mb-2 animate-fade">Dangal Greetings!</h2>
           <h1 className="display-4 fw-bold mb-2 animate-fade">Welcome to</h1>
           <h1 className="display-3 fw-bold mb-3 text-uppercase text-success-glow animate-fade">
