@@ -4,3 +4,6 @@
   padding: 0;
   text-align: left;
 }
+body {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+}

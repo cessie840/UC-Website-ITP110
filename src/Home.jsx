@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 import logo from "./assets/logo-pnc.png";
-import heroImage from "./assets/uc-hero.jpg";
-import img1 from "./assets/img1.jpg";
-import img2 from "./assets/img2.jpg";
-import img3 from "./assets/img3.jpg";
+import heroImage from "/images/main.webp";
+import img1 from "/images/front.jpg";
+import img2 from "/images/main.webp";
+import img3 from "/images/ground.jpg";
 
 function Home() {
   return (
