@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 import logo from "./assets/logo-pnc.png";
@@ -9,6 +9,13 @@ import img2 from "/images/main.webp";
 import img3 from "/images/ground.jpg";
 
 function Home() {
+  const navigate = useNavigate();
+  const handleLearnMore = () => {
+    navigate("/about"); // 👈 redirects to About page
+  };
+  const handleSeeMore = () => {
+    navigate("/gallery"); // 👈 redirects to About page
+  };
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -39,12 +46,12 @@ function Home() {
               Pamantasan ng Cabuyao
             </span>
           </p>
-          <Link
-            to="/about"
+          <button
             className="btn btn-success btn-lg fw-semibold shadow-sm animate-fade hover-glow"
+            onClick={handleLearnMore}
           >
             Learn More
-          </Link>
+          </button>
         </div>
 
         {/* Optional subtle scroll indicator */}
@@ -104,13 +111,13 @@ function Home() {
               </div>
             </div>
             <div>
-              <Link
-                to="/gallery"
+              <button
                 className="btn btn-light btn-lg fw-semibold shadow-sm animate-fade hover-glow"
                 data-bs-theme="dark"
+                onClick={handleSeeMore}
               >
                 See More
-              </Link>
+              </button>
             </div>
           </div>
         </div>

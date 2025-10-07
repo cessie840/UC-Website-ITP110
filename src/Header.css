@@ -2,9 +2,14 @@
 
 /* Navbar background */
 .navbar {
+  position: fixed; /* Makes it stay visible on scroll */
+  top: 0; /* Sticks it to the top */
+  left: 0;
+  width: 100%; /* Full width */
   background-color: #1b5e20 !important; /* Deep green */
   padding: 0.8rem 1.5rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  z-index: 1000; /* Keeps it above other elements */
 }
 
 /* Brand name */
